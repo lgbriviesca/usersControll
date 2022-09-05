@@ -1,0 +1,310 @@
+body {
+    background: url("cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+
+.index {
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar {
+    background: #ED230D !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.home-icon {
+    width: 4.5vw;
+}
+
+.masthead {
+    color: #0376BB;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: url("back.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.masthead h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+.title-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 16.5vh;
+    left: 2vw;
+    width: 50%;
+    align-items: center;
+}
+
+.title-container>a {
+    width: 15vw;
+    background-color: #0376BB;
+}
+
+@media (min-width: 992px) {
+    .masthead {
+        height: 100vh;
+    }
+
+    .masthead h1 {
+        font-size: 5.5rem;
+    }
+}
+
+.user-register {
+    display: flex;
+    position: absolute;
+    width: 25%;
+    left: 2vw;
+}
+
+.card-body button {
+    background-color: #0376BB;
+}
+
+.card-body button {
+    background-color: white;
+    color: #0376BB;
+}
+
+.card-body button:hover {
+    background-color: #0376BB;
+    color: white;
+
+}
+
+.form-group button {
+    background-color: white;
+    color: #0376BB;
+
+}
+
+.form-group button:hover {
+    background-color: #0376BB;
+    color: white;
+}
+
+.card-img-top {
+    border: #0376BB solid 4px;
+}
+
+.welcome-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    border: rgb(221, 221, 221) solid 1px;
+    padding: 1.5vw;
+}
+
+.card-body h5 {
+    text-align: left;
+    margin: 2vw 0;
+}
+
+.card-body li {
+    text-align: left;
+    color: #ED230D;
+}
+
+.links-card {
+    width: 30vw;
+}
+
+.likn-to-left {
+    text-align: left;
+}
+
+.profile-gral-container {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    /*  border: rgb(221, 221, 221) solid 1px; */
+    padding: 4vw 5vw 0 5vw;
+    justify-content: space-between;
+}
+
+.welcome-card-body>h3 {
+    text-align: center;
+    color: #0376BB;
+}
+
+.welcome-card-body>h5 {
+    color: #ED230D;
+}
+
+.profile-gral-container-down {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    padding: 3vw 5vw 0 5vw;
+    justify-content: space-between;
+}
+
+.welcome-card-body-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    width: 100%;
+    height: 15vw;
+    border: rgb(221, 221, 221) solid 1px;
+    padding: 1vw;
+    border-radius: 4px;
+}
+
+.scroll-list {
+    overflow-y: scroll;
+    color: #ED230D;
+}
+
+/* -------------- */
+
+.admin-btn {
+    display: flex;
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    background-color: white;
+    border: solid #0376BB 2px;
+}
+
+.card-img-top-admin {
+    border: #ED230D solid 4px;
+}
+
+.col-md-4-1 {
+    width: 39vw;
+    display: flex;
+    position: absolute;
+    top: 8vw;
+    left: 28vw;
+    background-color: #ED230D;
+}
+
+.admin-signUp {
+    display: flex;
+    position: absolute;
+    top: 8vw;
+    left: 3vw;
+}
+
+.reminder {
+    text-align: left;
+}
+
+/* ---------------------------------------------------------------------- */
+
+@media (max-width: 480px) {
+    body {
+        background: url("cover.jpg");
+     /*    background-repeat: no-repeat; */
+       /*  background-size: cover; */
+        font-family: 'Oswald', sans-serif;
+        overflow-x:hidden;
+        overflow-y:scroll; 
+    }
+    
+    .home-icon {
+        width: 50px;
+    }
+
+    .masthead {
+        color: #0376BB;
+      /*   min-height: 30rem; */
+        background: url("back.jpg");
+         background-position:right;
+         background-repeat:no-repeat;
+        background-size:cover;
+    }
+
+    .masthead h1 {
+        font-size: 3rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title-container {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 40%;
+        left: 10%;
+        width: 80%;
+        align-items: center;
+        background-color: white;
+        border:rgb(221, 221, 221) solid 2px;
+        padding: 10px;
+    }
+
+    .title-container>a {
+    width: 80%;
+    background-color: #0376BB;
+}
+
+
+.profile-gral-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    /*  border: rgb(221, 221, 221) solid 1px; */
+    padding: 20px 10px 0 10px; 
+    justify-content: space-between;
+/*     background-color: #ED230D; */
+}
+
+.welcome-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+     width: 100%; 
+    border: rgb(221, 221, 221) solid 1px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.profile-gral-container-down {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 10px 10px 10px;
+    justify-content: space-between;
+ /*    background-color: #0376BB; */
+}
+
+.welcome-card-body-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    width: 100%;
+    height: 200px;
+    border: rgb(221, 221, 221) solid 1px;
+    padding: 1vw;
+    border-radius: 0;
+    color: #0376BB;
+}
+
+.welcome-card-body-down > h3{
+    text-align: center;
+}
+
+  }

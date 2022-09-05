@@ -1,0 +1,39 @@
+{
+  "name": "truck_logistics",
+  "version": "1.0.0",
+  "description": "A logistics dashboard by using MySQL with ExpressJS and handlebars.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/"
+  },
+  "keywords": [
+    "express",
+    "javascript",
+    "ecmascript6",
+    "bootstrap4",
+    "handlebars",
+    "mysql",
+    "nodejs",
+    "crud"
+  ],
+  "author": "Luis Guerrero",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-mysql-session": "^2.1.8",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "timeago.js": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

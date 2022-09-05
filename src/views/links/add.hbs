@@ -1,0 +1,34 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+
+            <div class="card">
+                <div class="card-body">
+                    <form action="/links/add" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="destination" class="form-control" placeholder="Destination" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="url" name="route" class="form-control" placeholder="Route URL">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="details" rows="2" class="form-control" placeholder="Details"></textarea>
+                        </div>
+                         <div class="form-group">
+                            <input type="text" name="vehicle" class="form-control" placeholder="Plates">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="dueTo" class="form-control" placeholder="Due date">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Save
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

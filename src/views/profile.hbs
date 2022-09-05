@@ -1,0 +1,37 @@
+<div class="profile-gral-container">
+    <div class="welcome-card-body">
+        <h3>Your profile</h3>
+        <h4><b>{{user.fullname}}</b></h4>
+        <li>Worker id: <b>{{user.id}}</b></li>
+        <li>Driver ID: <b>{{user.drivingId}}</b></li>
+        <li>Contact phone: <b>{{user.cellphone}}</b></li>
+        <a href="/links" class="btn btn-primary m-4 btn-login">
+            See saved routes
+        </a>
+    </div>
+    <div class="welcome-card-body">
+        <h3>Welcome, {{user.username}}</h3>
+        <h5>If you don't have assigned routes yet, here you can add them to the system. Remember to have in hand:</h5>
+        <li>Company or warehouse name</li>
+        <li>Destination address</li>
+        <li>Due arriving date</li>
+        <li>Waze's route</li>
+        <a href="/links/add" class="btn btn-primary m-4 btn-login">
+            Save a route
+        </a>
+    </div>
+</div>
+<div class="profile-gral-container-down">
+    <div class="welcome-card-body-down">
+        <h3>Notifications</h3>
+        <div class="scroll-list">
+            <li><b>{{user.drivingId}}</b></li>
+            <li><b>{{user.drivingId}}</b></li>
+            <li><b>{{user.drivingId}}</b></li>
+            <li><b>{{user.drivingId}}</b></li>
+            <li><b>{{user.drivingId}}</b></li>
+            <li><b>{{user.drivingId}}</b></li>
+            <li><b>{{user.drivingId}}</b></li>
+        </div>
+    </div>
+</div>

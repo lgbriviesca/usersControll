@@ -1,0 +1,40 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each links}}
+        <div class="col-md-3">
+            <div class="card text-center ">
+                <div class="card-body">
+                    <a href="{{route}}" target="_blank">
+                        <h1 class="card-title text-uppercase">
+                            {{destination}}
+                        </h1>
+                    </a>
+                    <p class="card-title text-uppercase likn-to-left">
+                      <b>due date:</b> {{dueTo}}
+                    </p>
+                    <p class="card-title text-uppercase likn-to-left"> <b>details:</b> {{details}}</p>
+                      <p class="card-title text-uppercase likn-to-left">
+                     <b>vehicle:</b> {{vehicle}}
+                    </p >
+                    <p class="text-muted">
+                      <b>created:</b> {{timeago created_at}}
+                    </p>
+                    <a class="btn btn-danger" href="/links/delete/{{id}}">
+                        Delete Link
+                    </a>
+                    <a class="btn btn-secondary" href="/links/edit/{{id}}">
+                        Edit
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>There are not routes saved yet.</p>
+                <a href="/links/add">Add a route</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
