@@ -1,4 +1,4 @@
-module.exports = {
+/* module.exports = {
   database: {
     connectionLimit: 10,
     host: 'localhost',
@@ -6,9 +6,9 @@ module.exports = {
     password: "password",
     database: 'database_links',
   },
-};
+}; */
 
-/* module.exports = {
+module.exports = {
   database: {
     connectionLimit: 10,
     host: 'us-cdbr-east-06.cleardb.net',
@@ -16,4 +16,4 @@ module.exports = {
     password: "49d65eee",
     database: 'heroku_592fd0a9854f37d',
   },
-}; */
+};
