@@ -29,8 +29,14 @@ router.post('/signin', isNotLoggedIn, (req, res, next) => {
   })(req, res, next);
 });
 
-router.get('/profile', isLoggedIn, (req, res) => {
+router.get('/profile', isLoggedIn, async(req, res) => {
   res.render('profile');
+  console.log(req.user.id);
+  const notifs = await pool.query(
+    'SELECT * FROM notifs WHERE user_id = ?',
+    req.user.id
+  );
+  console.log(notifs)
 });
 
 router.get('/logout', isLoggedIn, (req, res, next) => {
