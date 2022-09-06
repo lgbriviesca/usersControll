@@ -10,7 +10,7 @@
 
 module.exports = {
   database: {
-    connectionLimit: 10,
+    connectionLimit: 15,
     host: 'us-cdbr-east-06.cleardb.net',
     user: 'ba3c3899876682',
     password: "49d65eee",
