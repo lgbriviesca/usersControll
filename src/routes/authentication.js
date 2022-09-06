@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const passport = require('passport');
+const pool = require('../database');
 const { isLoggedIn, isNotLoggedIn } = require('../lib/auth');
 
 router.get('/signup', isNotLoggedIn, (req, res) => {
-   res.render('auth/signup');
+  res.render('auth/signup');
 });
 router.post(
   '/signup',
@@ -29,14 +30,12 @@ router.post('/signin', isNotLoggedIn, (req, res, next) => {
   })(req, res, next);
 });
 
-router.get('/profile', isLoggedIn, async(req, res) => {
-  res.render('profile');
-  console.log(req.user.id);
+router.get('/profile', isLoggedIn, async (req, res) => {
   const notifs = await pool.query(
     'SELECT * FROM notifs WHERE user_id = ?',
     req.user.id
   );
-  console.log(notifs)
+  res.render('profile', { notifs });
 });
 
 router.get('/logout', isLoggedIn, (req, res, next) => {

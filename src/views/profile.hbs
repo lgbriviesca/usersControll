@@ -25,13 +25,9 @@
     <div class="welcome-card-body-down">
         <h3>Notifications</h3>
         <div class="scroll-list">
-            <li><b>{{user.drivingId}}</b></li>
-            <li><b>{{user.drivingId}}</b></li>
-            <li><b>{{user.drivingId}}</b></li>
-            <li><b>{{user.drivingId}}</b></li>
-            <li><b>{{user.drivingId}}</b></li>
-            <li><b>{{user.drivingId}}</b></li>
-            <li><b>{{user.drivingId}}</b></li>
+            {{#each notifs}}
+            <li>{{issue}}</li>
+            {{/each}}
         </div>
     </div>
 </div>
