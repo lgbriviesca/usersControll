@@ -4,7 +4,6 @@
   "description": "A logistics dashboard by using MySQL with ExpressJS and handlebars.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
     "dev": "nodemon src/"
   },
   "keywords": [
