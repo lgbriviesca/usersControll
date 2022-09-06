@@ -15,7 +15,8 @@ const app = express();
 require('./lib/passport');
 
 //  configuraciones
-app.set('port', 8000 || 3306);
+const PORT = process.env.PORT || 8000;
+/* app.set('port', 8000 || 3306); */
 app.set('views', path.join(__dirname, 'views'));
 app.engine(
   '.hbs',
@@ -63,6 +64,6 @@ app.use('/links', require('./routes/links'));
 app.use(express.static(__dirname, +'/public'));
 
 //  iniciar el servidor antes definido
-app.listen(app.get('port'), () => {
-  console.log('Server is running on port', app.get('port'));
+app.listen(PORT, () => {
+  console.log(`logistics app is running on port: ${PORT}`);
 });
